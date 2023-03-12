@@ -1,0 +1,24 @@
+{
+  "name": "request-multiple-urls",
+  "version": "0.0.1",
+  "description": "fetches an array of URLs which contain JSON data and returns their contents in a promise",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "nyc --reporter=text mocha --require babel-core/register 'src/tests/**/*.spec.js'",
+    "build": "yarn test && babel src -d dist"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.3.6",
+    "mocha": "^10.1.0",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "axios": "1.1.3"
+  }
+}
